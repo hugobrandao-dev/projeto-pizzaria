@@ -7,6 +7,10 @@
 }
 
 /* CABECALHO */
+.hr-ho {
+    background-color: var(--cor-vermelha);
+}
+
 #cabecalho {
     padding: 15px 30px;
     float: left;
@@ -33,6 +37,7 @@
 
 #cabecalho #menu-navegacao i {
     margin-right: 20px;
+    font-size: 1.2em;
 }
 
 #cabecalho a h1 {
@@ -101,7 +106,10 @@
 }
 
 #rodape form button[type='submit'] {
+    padding: 0;
     width: 20%;
+    height: 44px;
+    line-height: 100%;
     border-left: none;
     border-color: var(--cor-vermelha);
     background-color: var(--cor-vermelha);
@@ -117,6 +125,11 @@
 
 #rodape .sociais li {
     display: inline-block;
+}
+
+#rodape .sociais i {
+    color: var(--cor-vermelha);
+    margin-right: 15px;
 }
 
 #rodape .sociais li:last-child {
