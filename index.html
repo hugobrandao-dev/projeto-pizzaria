@@ -1,28 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Icones do FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
     <!-- Font do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Estilo interno -->
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Página Inicial</title>
 </head>
+
 <body>
     <header id="cabecalho">
-        
+        <a href="index.html">
+            <h1>Hugo Pizzaria</h1>
+        </a>
+        <button type="button" id="btn-menu" class="btn btn-reg"><i class="fas fa-bars"></i></button>
+        <nav id="menu-navegacao">
+            <hr class="hr-ho">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i>Início</a></li>
+                <li><a href="#"><i class="fas fa-shopping-basket"></i>Produtos</a></li>
+                <li><a href="#"><i class="far fa-address-book"></i>Contatos</a></li>
+            </ul>
+        </nav>
     </header>
     <main id="corpo">
-        
+        <section class="vendas">
+            <article class="produtos">
+                <img src="img/pizzas.jpg" alt="Imagem de pizza">
+                <div class="descricao">
+                    <h4>Pizzas</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum illo.</p>
+                    <button type="button" class="btn btn-ver">Ver produtos</button>
+                </div>
+            </article>
+            <article class="produtos">
+                <img src="img/lanches.jpg" alt="Imagem de lanche">
+                <div class="descricao">
+                    <h4>Lanches</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum illo.</p>
+                    <button type="button" class="btn btn-ver">Ver produtos</button>
+                </div>
+            </article>
+            <article class="produtos">
+                <img src="img/bebidas.jpg" alt="Imagem de bebida">
+                <div class="descricao">
+                    <h4>Bebidas</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum illo.</p>
+                    <button type="button" class="btn btn-ver">Ver produtos</button>
+                </div>
+            </article>
+        </section>
     </main>
     <footer id="rodape">
-
+        <form>
+            <input type="tel" class="ipt" placeholder="Informe seu telefone">
+            <button type="submit" class="btn"><i class="fab fa-whatsapp"></i></button>
+        </form>
+        <ul class="sociais">
+            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+        </ul>
+        <div class="info">
+            &copy; Todos os direitos reservados - 2020
+            Desenvolvedor: Hugo R. Brandão.
+        </div>
     </footer>
 </body>
+
 </html>

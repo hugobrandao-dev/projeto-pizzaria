@@ -1,0 +1,131 @@
+/* CORES PADRÕES */
+:root {
+    --cor-amarela-clara: #fff5cc;
+    --cor-amarela: #ffcc00;
+    --cor-vermelha-clara: #f8a0a0;
+    --cor-vermelha: #f13b3b;
+}
+
+/* CABECALHO */
+#cabecalho {
+    padding: 15px 30px;
+    float: left;
+    width: 100%;
+    background-color: var(--cor-amarela);
+}
+
+#cabecalho a {
+    color: var(--cor-vermelha);
+    float: left;
+}
+
+#cabecalho #menu-navegacao {
+    float: left;
+    width: 100%;
+}
+
+#cabecalho #menu-navegacao a {
+    float: left;
+    width: 100%;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+#cabecalho #menu-navegacao i {
+    margin-right: 20px;
+}
+
+#cabecalho a h1 {
+    line-height: 50px;
+}
+
+#cabecalho #btn-menu {
+    color: var(--cor-vermelha);
+    border-color: var(--cor-vermelha);
+    background-color: var(--cor-amarela);
+    float: right;
+}
+
+/* CORPO */
+#corpo {
+    background-color: var(--cor-vermelha);
+    padding: 15px 30px;
+    width: 100%;
+}
+
+#corpo .produtos {
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 0px 0px;
+    display: block;
+}
+
+#corpo .produtos:last-child {
+    margin-bottom: 0;
+}
+
+#corpo .produtos img {
+    float: left;
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: solid 4px var(--cor-vermelha);
+}
+#corpo .produtos .descricao {
+    padding: 10px;
+    color: var(--cor-vermelha);
+}
+
+#corpo .descricao p {
+    margin: 15px auto;
+}
+
+#corpo .descricao .btn-ver {
+    border: none;
+    background-color: white;
+    color: var(--cor-vermelha);
+    border-left: solid 2px var(--cor-vermelha);
+    border-bottom: solid 2px var(--cor-vermelha);
+}
+
+#rodape {
+    float: left;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: var(--cor-amarela);
+}
+
+#rodape form input[type='tel'] {
+    float: left;
+    width: 80%;
+    border-color: white;
+}
+
+#rodape form button[type='submit'] {
+    width: 20%;
+    border-left: none;
+    border-color: var(--cor-vermelha);
+    background-color: var(--cor-vermelha);
+    color: var(--cor-amarela);
+}
+
+#rodape .sociais {
+    float: left;
+    width: 100%;
+    margin: 15px auto;
+    text-align: center;
+}
+
+#rodape .sociais li {
+    display: inline-block;
+}
+
+#rodape .sociais li:last-child {
+    margin-right: 0px;
+}
+
+#rodape .info {
+    text-align: center;
+    float: left;
+    width: 100%;
+    color: var(--cor-vermelha);
+}
