@@ -133,6 +133,9 @@
 
 #rodape .sociais i {
     color: var(--cor-vermelha);
+}
+
+#rodape .sociais li {
     margin-right: 15px;
 }
 
