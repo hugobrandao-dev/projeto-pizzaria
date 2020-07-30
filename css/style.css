@@ -16,6 +16,8 @@
     float: left;
     width: 100%;
     background-color: var(--cor-amarela);
+    position: fixed;
+    top: 0;
 }
 
 #cabecalho a {
@@ -26,6 +28,7 @@
 #cabecalho #menu-navegacao {
     float: left;
     width: 100%;
+    display: none;
 }
 
 #cabecalho #menu-navegacao a {
@@ -55,6 +58,7 @@
 #corpo {
     background-color: var(--cor-vermelha);
     padding: 15px 30px;
+    margin-top: 80px;
     width: 100%;
 }
 
