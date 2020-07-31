@@ -20,7 +20,7 @@
     top: 0;
 }
 
-#cabecalho a {
+#cabecalho .logo {
     color: var(--cor-vermelha);
     float: left;
 }
@@ -32,18 +32,19 @@
 }
 
 #cabecalho #menu-navegacao a {
+    color: var(--cor-vermelha);
     float: left;
     width: 100%;
     font-size: 1.5em;
     line-height: 1.5em;
 }
 
-#cabecalho #menu-navegacao i {
+ #menu-navegacao a i {
     margin-right: 20px;
     font-size: 1.2em;
 }
 
-#cabecalho a h1 {
+#cabecalho .logo h1 {
     line-height: 50px;
 }
 
@@ -148,4 +149,55 @@
     float: left;
     width: 100%;
     color: var(--cor-vermelha);
+}
+
+@media screen and (min-width: 480px) {
+    #corpo .vendas {
+        text-align: justify;
+    }
+
+    #corpo .vendas::after {
+        display: inline-block;
+        width: 100%;
+        content: '';
+    }
+    
+    #corpo .vendas .produtos {
+        display: inline-block;
+        width: 30%;
+    }
+
+    #rodape form {
+        width: 50%;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #cabecalho #btn-menu {
+        display: none;
+    }
+
+    #cabecalho #menu-navegacao {
+        display: inline-block;
+        width: auto;
+        float: right;
+        text-align: right;
+    }
+
+    #cabecalho #menu-navegacao .hr-ho, #cabecalho #menu-navegacao i {
+        display: none;
+    }
+
+    #menu-navegacao li {
+        float: left;
+    }
+
+    #menu-navegacao li:first-child {
+        margin-left: 0;
+    }
+
+    #menu-navegacao li a {
+        padding: 10px 40px;
+    }
 }
