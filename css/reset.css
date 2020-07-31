@@ -40,6 +40,10 @@ h1 {
     border-width: 2px;
 }
 
+.btn {
+    cursor: pointer;
+}
+
 .btn-reg {
     padding: 0;
     width: 50px;
