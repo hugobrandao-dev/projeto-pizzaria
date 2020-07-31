@@ -200,4 +200,20 @@
     #menu-navegacao li a {
         padding: 10px 40px;
     }
+
+    #rodape form {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    #rodape form {
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #rodape form {
+        width: 15%;
+    }
 }
