@@ -113,7 +113,7 @@
     border-color: white;
 }
 
-#rodape form button[type='submit'] {
+#rodape form button[type='button'] {
     padding: 0;
     width: 20%;
     height: 44px;
