@@ -1,6 +1,6 @@
 // Comportamento do botão menu.
 var buttonElement_menu = document.querySelector('button#btn-menu')
-buttonElement_menu.onclick = function() {
+buttonElement_menu.onclick = function () {
     let navElement_navegacao = document.querySelector('nav#menu-navegacao')
     if (navElement_navegacao.style.display === '') {
         navElement_navegacao.style.display = 'block'
@@ -13,11 +13,14 @@ buttonElement_menu.onclick = function() {
 
 // Comportamento do botão de Whatsapp
 var buttonElement_whats = document.querySelector('button#btn-whats')
-buttonElement_whats.onclick = function() {
+buttonElement_whats.onclick = function () {
     let inputElement_telefone = document.getElementsByName('telefone')[0]
-    let telefone = inputElement_telefone.value
-    alert(`Enviamos um whats para o seu celular (${telefone}), interaja conosco por lá. :)`)
-    inputElement_telefone
+    if (inputElement_telefone.value < 11 || Number(inputElement_telefone.value) != inputElement_telefone.value) {
+        alert('ERRO: Insira ou verifique o número de telefone no campo ao lado.')
+    } else {
+        alert(`Enviamos um whats para o seu celular (${telefone}), interaja conosco por lá. :)`)
+        inputElement_telefone
+    }
 }
 
 // Coloca o ano atual no rodapé da página.
@@ -29,7 +32,7 @@ spanElement_ano.innerHTML = `${data.getFullYear()}`
 var conector = new XMLHttpRequest()
 conector.open('GET', 'https://api.github.com/users/hugobrandao-dev')
 conector.send(null)
-conector.onreadystatechange = function() {
+conector.onreadystatechange = function () {
     if (conector.readyState === 4) {
         let spanElement_dev = document.querySelector('span.dev-nome')
         let nome = JSON.parse(conector.responseText).name
