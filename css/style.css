@@ -23,6 +23,7 @@
 #cabecalho .logo {
     color: var(--cor-vermelha);
     float: left;
+    border-bottom: solid 3px var(--cor-vermelha);
 }
 
 #cabecalho #menu-navegacao {
@@ -77,9 +78,11 @@
 #corpo .produtos img {
     float: left;
     width: 100%;
+    height: 225px;
     border-radius: 5px 5px 0px 0px;
     border-bottom: solid 4px var(--cor-vermelha);
 }
+
 #corpo .produtos .descricao {
     padding: 10px;
     color: var(--cor-vermelha);
@@ -167,6 +170,10 @@
         width: 30%;
     }
 
+    #corpo .vendas .produtos img {
+        height: auto;
+    }
+
     #rodape form {
         width: 50%;
         margin: 0px auto;
@@ -198,7 +205,14 @@
     }
 
     #menu-navegacao li a {
-        padding: 10px 40px;
+        padding: 10px 30px;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        border-bottom-color: var(--cor-amarela);
+    }
+
+    #menu-navegacao li a:hover {
+        border-bottom-color: var(--cor-vermelha);
     }
 
     #rodape form {
@@ -207,9 +221,6 @@
 }
 
 @media screen and (min-width: 960px) {
-    #rodape form {
-        width: 20%;
-    }
 }
 
 @media screen and (min-width: 1280px) {
