@@ -1,3 +1,4 @@
+// Comportamento do botão menu.
 var buttonElement_menu = document.querySelector('button#btn-menu')
 buttonElement_menu.onclick = function() {
     let navElement_navegacao = document.querySelector('nav#menu-navegacao')
@@ -7,5 +8,31 @@ buttonElement_menu.onclick = function() {
     } else {
         navElement_navegacao.style.display = ''
         buttonElement_menu.innerHTML = `<i class="fas fa-bars"></i>`
+    }
+}
+
+// Comportamento do botão de Whatsapp
+var buttonElement_whats = document.querySelector('button#btn-whats')
+buttonElement_whats.onclick = function() {
+    let inputElement_telefone = document.getElementsByName('telefone')[0]
+    let telefone = inputElement_telefone.value
+    alert(`Enviamos um whats para o seu celular (${telefone}), interaja conosco por lá. :)`)
+    inputElement_telefone
+}
+
+// Coloca o ano atual no rodapé da página.
+var data = new Date()
+var spanElement_ano = document.querySelector('span.ano-atual')
+spanElement_ano.innerHTML = `${data.getFullYear()}`
+
+// Coloca o nome do desenvolvedor no rodapé da página utilizando a api do GitHub.
+var conector = new XMLHttpRequest()
+conector.open('GET', 'https://api.github.com/users/hugobrandao-dev')
+conector.send(null)
+conector.onreadystatechange = function() {
+    if (conector.readyState === 4) {
+        let spanElement_dev = document.querySelector('span.dev-nome')
+        let nome = JSON.parse(conector.responseText).name
+        spanElement_dev.innerHTML = `${nome}`
     }
 }
