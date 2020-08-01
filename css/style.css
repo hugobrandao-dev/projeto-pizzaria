@@ -23,7 +23,6 @@
 #cabecalho .logo {
     color: var(--cor-vermelha);
     float: left;
-    border-bottom: solid 3px var(--cor-vermelha);
 }
 
 #cabecalho #menu-navegacao {
@@ -221,10 +220,13 @@
 }
 
 @media screen and (min-width: 960px) {
+    #rodape form {
+        width: 30%;
+    }
 }
 
 @media screen and (min-width: 1280px) {
     #rodape form {
-        width: 15%;
+        width: 20%;
     }
 }
