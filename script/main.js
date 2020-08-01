@@ -15,11 +15,11 @@ buttonElement_menu.onclick = function () {
 var buttonElement_whats = document.querySelector('button#btn-whats')
 buttonElement_whats.onclick = function () {
     let inputElement_telefone = document.getElementsByName('telefone')[0]
-    if (inputElement_telefone.value < 11 || Number(inputElement_telefone.value) != inputElement_telefone.value) {
+    if (inputElement_telefone.value.length < 11 || Number(inputElement_telefone.value) != inputElement_telefone.value) {
         alert('ERRO: Insira ou verifique o número de telefone no campo ao lado.')
     } else {
-        alert(`Enviamos um whats para o seu celular (${telefone}), interaja conosco por lá. :)`)
-        inputElement_telefone
+        alert(`Enviamos um whats para o seu celular (${inputElement_telefone.value}), interaja conosco por lá. :)`)
+        inputElement_telefone.value = ''
     }
 }
 
